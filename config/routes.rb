@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'landings/home'
+
+  get 'landings/contact'
+
+  get 'landings/about'
+
   get 'pages/index'
 
   get 'pages/about'
