@@ -1,2 +1,9 @@
 <h1>Pages#index</h1>
 <p>Find me in app/views/pages/index.html.erb</p>
+<% @names.each_with_index do |names, i| %>
+<p> <%= names %> <%= @data[i] %></p>
+<% end %>
+
+<%= link_to 'about us', pages_about_path %>
+<br/>
+<a href= "<%= pages_about_path %>"> about us </a>
